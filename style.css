@@ -1,3 +1,8 @@
+body{
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
 .images {
     width: 100%;
     height: auto;
@@ -13,35 +18,43 @@
   /* Bottom left text */
   .bottom-left {
     position: absolute;
-    bottom: 8px;
-    left: 16px;
+    bottom: 60%;
+    left: 30%;
   }
-  
-  /* Top left text */
-  .top-left {
-    position: absolute;
-    top: 8px;
-    left: 16px;
-  }
-  
-  /* Top right text */
-  .top-right {
-    position: absolute;
-    top: 8px;
-    right: 16px;
-  }
+
   
   /* Bottom right text */
   .bottom-right {
     position: absolute;
-    bottom: 8px;
-    right: 16px;
+    bottom: 10%;
+    left: 40%;
   }
   
   /* Centered text */
-  .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+ .video{
+     width: 100%;
+     overflow: hidden;
+     display: none;
+ }
+
+ .standbild{
+    width: 100%;
+    overflow: hidden;
+    display: none;
+ }
+
+ .anfangsText{
+     color: black;
+     background: white;
+     font-size: 1.5em;
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: 400;
+     position: absolute;
+    top: 5%;
+    bottom: 1%;
+    left: 60%;
+    right: 10%;
+    border-radius: 10px;
+    
+
+ }

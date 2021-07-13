@@ -8,15 +8,28 @@
     <script src="front.js"></script>
   </head>
   <body>
+  
       <div class="container">
+        <video autoplay muted class="video" id="vidMit" controls>
+          <source src="img/Mit.MOV" >
+        Your browser does not support the video tag.
+        </video>
+        <video autoplay muted class="video" id="vidOhne" controls>
+          <source src="img/Ohne.MOV" >
+        Your browser does not support the video tag.
+        </video>
+        <img id="Fernseher1" class="standbild" src="img/Fernseher1.jpeg" alt="">
           <img id="img"class="images" src="img/Door.jpeg" alt="Image of Door">
-          <div class="bottom-left">Bottom Left
-            <button onclick="mit()"></button>
+          <div class="bottom-left">
+            <button id="mitButton" onclick="mit()"></button>
           </div>
-          <div class="top-left">Top Left</div>
-          <div class="top-right">Top Right</div>
-          <div class="bottom-right">Bottom Right</div>
-          <div class="centered">Centered</div>
+          <div class="bottom-right">
+            <button id="ohneButton" onclick="ohne()"></button>
+          </div>
+          <div class="anfangsText"> <p> Herzlich Willkommen auf unserer EMS Seite. schön, dass seid da. Merkt euch folgendes mal kurz! AUto nla Fisxhstäbchen 
+            Übel
+          </p>
+          </div>
       </div>
   </body>
 </html>
