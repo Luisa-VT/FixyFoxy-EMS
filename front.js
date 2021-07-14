@@ -26,15 +26,15 @@ function mit() {
 
     document.getElementById("vidOhne").onended = function nextMit(){
         document.getElementById("vidOhne").style.display = "none";
-        document.getElementById("Fernseher1").style.display = "block";
+        document.getElementById("FernseherSchlafzimmer").style.display = "block";
         document.getElementById("tv").style.display = "block";
-        document.getElementById("vidOhne").replaceWith(document.getElementById("Fernseher1"));
+        document.getElementById("vidOhne").replaceWith(document.getElementById("FernseherSchlafzimmer"));
       }
   }
 
   function auswahl1(){
     document.getElementById("auswahlT1").style.color ="blue";
-    auswahlliste.push("Regen");
+    auswahlliste.push("Landschaft");
     document.getElementById("tv").innerHTML = "Regen";
     if(auswahlliste.length >= 2){
       weiterMit();
@@ -42,7 +42,7 @@ function mit() {
   }
   function auswahl2(){
     document.getElementById("auswahlT2").style.color ="green";
-    auswahlliste.push("Haare");
+    auswahlliste.push("Urlaub");
     document.getElementById("tv").innerHTML = "Haare";
     if(auswahlliste.length >= 2){
       weiterMit();
@@ -68,46 +68,48 @@ function mit() {
 
     document.getElementById("weiterMit").onended = function nextnextMit(){
         document.getElementById("weiterMit").style.display = "none";
-        document.getElementById("Fernseher1").style.display = "block";
+        document.getElementById("FernseherSchlafzimmer").style.display = "block";
         document.getElementById("tv").style.display = "block";
-        document.getElementById("weiterMit").replaceWith(document.getElementById("Fernseher1"));
+        document.getElementById("weiterMit").replaceWith(document.getElementById("FernseherSchlafzimmer"));
+        
       }
   }
 
   function weiter(){
     
     document.getElementById("tv").style.display ="none";
-    document.getElementById("weiter").style.display ="none";
+    let Fern = document.getElementById("FernseherSchlafzimmer");
     if(auswahlliste.length >= 1){
       for(let i in auswahlliste){
         console.log(i);
-      if(auswahlliste[i] == "Haare"){
+      if(auswahlliste[i] == "Urlaub"){
         console.log("hello");
         for(let j in auswahlliste){
           if(auswahlliste[j] == "Pinguin"){
         document.getElementById("backMit").style.display ="block";
-      document.getElementById("Fernseher1").replaceWith(document.getElementById("backMit"));
-      document.getElementById("backMit").play();
+        console.log("document.getElement");
+        Fern.replaceWith(document.getElementById("backMit"));
+        document.getElementById("backMit").play();
 
       document.getElementById("backMit").onended = function Mit(){
+        console.log(document.getElementById("tv").innerHTML);
         document.getElementById("backMit").style.display = "none";
         document.getElementById("Fernseher").style.display = "block";
-        document.getElementById("tv").style.display = "block";
-        document.getElementById("tv").innerHTML = "Pinguin";
+        document.getElementById("tv2").style.display = "block";
         document.getElementById("backMit").replaceWith(document.getElementById("Fernseher"));
       
       }
       }
-      else if(auswahlliste[j] == "Regen"){
+      else if(auswahlliste[j] == "Landschaft"){
         document.getElementById("backMit").style.display ="block";
-      document.getElementById("Fernseher1").replaceWith(document.getElementById("backMit"));
+        Fern.replaceWith(document.getElementById("backMit"));
       document.getElementById("backMit").play();
 
       document.getElementById("backMit").onended = function Mit(){
         document.getElementById("backMit").style.display = "none";
         document.getElementById("Fernseher").style.display = "block";
-        document.getElementById("tv").style.display = "block";
-        document.getElementById("tv").innerHTML = "Regen";
+        document.getElementById("tv2").style.display = "block";
+        document.getElementById("tv2").innerHTML = "Regen";
         document.getElementById("backMit").replaceWith(document.getElementById("Fernseher"));
       }
       }
@@ -115,14 +117,13 @@ function mit() {
       }
       else{
         document.getElementById("backMit").style.display ="block";
-      document.getElementById("Fernseher1").replaceWith(document.getElementById("backMit"));
+      document.getElementById("FernseherSchlafzimmer").replaceWith(document.getElementById("backMit"));
       document.getElementById("backMit").play();
 
       document.getElementById("backMit").onended = function Mit(){
         document.getElementById("backMit").style.display = "none";
         document.getElementById("Fernseher").style.display = "block";
-        document.getElementById("tv").style.display = "block";
-        document.getElementById("tv").innerHTML = "no";
+        document.getElementById("tv2").style.display = "block";
         document.getElementById("backMit").replaceWith(document.getElementById("Fernseher"));
       }
       }
@@ -130,7 +131,7 @@ function mit() {
     }
     else{
       document.getElementById("backOhne").style.display ="block";
-      document.getElementById("Fernseher1").replaceWith(document.getElementById("backOhne"));
+      Fern.replaceWith(document.getElementById("backOhne"));
       document.getElementById("backOhne").play();
 
       document.getElementById("backOhne").onended = function Ohne(){

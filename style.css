@@ -123,11 +123,11 @@ hexagon: https://stackoverflow.com/questions/17896791/hexagon-shape-with-css3/17
 
   .tv-bg{
       bottom: 15%;
-      top: 10%;
+      top: 15%;
       left: 5%;
       right: 18%;
       color: white;
-     background: black;
+     background: transparent;
      font-size: 2.5vw;
      font-family: 'Poppins', sans-serif;
      font-weight: 400;
@@ -181,6 +181,17 @@ hexagon: https://stackoverflow.com/questions/17896791/hexagon-shape-with-css3/17
   }
 
   .weiterBtn{
-      left:50%;
-      right:10%;
+    bottom: 15%;
+    top: 80%;
+    left: 80%;
+    right: 18%;
+    color: white;
+   background: black;
+   font-size: 2.5vw;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 400;
+   text-align: center;
+   position: absolute;
+   display: none;
+
   }
