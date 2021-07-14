@@ -122,10 +122,10 @@ hexagon: https://stackoverflow.com/questions/17896791/hexagon-shape-with-css3/17
   }
 
   .tv-bg{
-      bottom: 10%;
+      bottom: 15%;
       top: 10%;
-      left: 10%;
-      right: 10%;
+      left: 5%;
+      right: 18%;
       color: white;
      background: black;
      font-size: 2.5vw;
@@ -178,4 +178,9 @@ hexagon: https://stackoverflow.com/questions/17896791/hexagon-shape-with-css3/17
 }
 .auswahl3:hover{
     color: beige;
+  }
+
+  .weiterBtn{
+      left:50%;
+      right:10%;
   }
