@@ -39,13 +39,13 @@ function ohne() {
 }
 
 function auswahl1() {
-  if (auswahlliste.includes("Regen")) {
+  if (auswahlliste.includes("Sushi")) {
     document.getElementById("auswahlT1").style.color = "teal";
-    auswahlliste.shift("Regen");
+    auswahlliste.shift("Sushi");
   } else {
     document.getElementById("auswahlT1").style.color = "blue";
-    auswahlliste.push("Landschaft");
-    document.getElementById("tv").innerHTML = "Regen";
+    auswahlliste.push("Sushi");
+    document.getElementById("tv").innerHTML = "Sushi";
     if (auswahlliste.length >= 2) {
       weiterMit();
     }
@@ -109,51 +109,54 @@ function weiter() {
         console.log("hello");
         for (let j in auswahlliste) {
           if (auswahlliste[j] == "Pinguin") {
-            document.getElementById("backMit").style.display = "block";
+            document.getElementById("backMit1").style.display = "block";
             console.log("document.getElement");
-            Fern.replaceWith(document.getElementById("backMit"));
-            document.getElementById("backMit").play();
+            Fern.replaceWith(document.getElementById("backMit1"));
+            document.getElementById("backMit1").play();
 
-            document.getElementById("backMit").onended = function Mit() {
+            document.getElementById("backMit1").onended = function Mit() {
               console.log(document.getElementById("tv").innerHTML);
-              document.getElementById("backMit").style.display = "none";
+              document.getElementById("backMit1").style.display = "none";
               document.getElementById("Fernseher").style.display = "block";
               document.getElementById("tv2").style.display = "block";
               document
-                .getElementById("backMit")
+                .getElementById("backMit1")
                 .replaceWith(document.getElementById("Fernseher"));
             };
-          } else if (auswahlliste[j] == "Landschaft") {
-            document.getElementById("backMit").style.display = "block";
-            Fern.replaceWith(document.getElementById("backMit"));
-            document.getElementById("backMit").play();
+          } else if (auswahlliste[j] == "Sushi") {
+            document.getElementById("backMit2").style.display = "block";
+            Fern.replaceWith(document.getElementById("backMit2"));
+            document.getElementById("backMit2").play();
 
-            document.getElementById("backMit").onended = function Mit() {
-              document.getElementById("backMit").style.display = "none";
+            document.getElementById("backMit2").onended = function Mit() {
+              document.getElementById("backMit2").style.display = "none";
               document.getElementById("Fernseher").style.display = "block";
               document.getElementById("tv2").style.display = "block";
-              document.getElementById("tv2").innerHTML = "Regen";
               document
-                .getElementById("backMit")
+                .getElementById("backMit2")
                 .replaceWith(document.getElementById("Fernseher"));
             };
           }
         }
-      } else {
-        document.getElementById("backMit").style.display = "block";
-        document
-          .getElementById("FernseherSchlafzimmer")
-          .replaceWith(document.getElementById("backMit"));
-        document.getElementById("backMit").play();
+      } else if (auswahlliste[i] == "Pinguin") {
+        for (let j in auswahlliste) {
+          if (auswahlliste[j] == "Sushi") {
+            document.getElementById("backMit3").style.display = "block";
+            document
+              .getElementById("FernseherSchlafzimmer")
+              .replaceWith(document.getElementById("backMit3"));
+            document.getElementById("backMit3").play();
 
-        document.getElementById("backMit").onended = function Mit() {
-          document.getElementById("backMit").style.display = "none";
-          document.getElementById("Fernseher").style.display = "block";
-          document.getElementById("tv2").style.display = "block";
-          document
-            .getElementById("backMit")
-            .replaceWith(document.getElementById("Fernseher"));
-        };
+            document.getElementById("backMit3").onended = function Mit() {
+              document.getElementById("backMit3").style.display = "none";
+              document.getElementById("Fernseher").style.display = "block";
+              document.getElementById("tv2").style.display = "block";
+              document
+                .getElementById("backMit3")
+                .replaceWith(document.getElementById("Fernseher"));
+            };
+          }
+        }
       }
     }
   } else {
