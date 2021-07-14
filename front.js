@@ -275,23 +275,28 @@ function sidebaropen() {
 }
 function sidebaropenBeamer() {
   document.getElementById("sidebar").classList.toggle("collapsed");
-  document.getElementById("sidetext").innerHTML = "Wenn die Person ein Klopfzeichen eingestellt hat und an einer Tür entlang läuft, leuchtet eine LED auf, welche sich um die Linse eines Projektors am oberen Türrahmen befindet. ";
+  document.getElementById("sidetext").innerHTML =
+    "Wenn die Person ein Klopfzeichen eingestellt hat und an einer Tür entlang läuft, leuchtet eine LED auf, welche sich um die Linse eines Projektors am oberen Türrahmen befindet. ";
 }
 function sidebaropenScanner() {
   document.getElementById("sidebar").classList.toggle("collapsed");
-  document.getElementById("sidetext").innerHTML = "Wenn sich der Nutzer nun eine neue Erinnerung einrichten möchte, scannt er beliebig viele NFC-Chips am Türrahmen (NFC-Reader) ein und bestätigt die Auswahl der Bilder mit einem individuell ausgewählten Klopfzeichen."; 
+  document.getElementById("sidetext").innerHTML =
+    "Wenn sich der Nutzer nun eine neue Erinnerung einrichten möchte, scannt er beliebig viele NFC-Chips am Türrahmen (NFC-Reader) ein und bestätigt die Auswahl der Bilder mit einem individuell ausgewählten Klopfzeichen.";
 }
 function sidebaropenBoden() {
   document.getElementById("sidebar").classList.toggle("collapsed");
-  document.getElementById("sidetext").innerHTML = "Die zuvor ausgewählten Bilder werden auf den Fußbode im Türrahmen projeziert. Die gewählten Bilder soll der Nutzer dazu verwenden, sich eine Geschichte mit seinen eigenen Erinnerungen zu überlegen. Die Verknüpfung mit einer Geschichte und den damit verbundenen Emotionen trägt dazu bei, dass ein Gedanke schneller in das Langzeitgedächtnis gelangt und man sich besser an etwas erinnern kann."; 
+  document.getElementById("sidetext").innerHTML =
+    "Die zuvor ausgewählten Bilder werden auf den Fußbode im Türrahmen projeziert. Die gewählten Bilder soll der Nutzer dazu verwenden, sich eine Geschichte mit seinen eigenen Erinnerungen zu überlegen. Die Verknüpfung mit einer Geschichte und den damit verbundenen Emotionen trägt dazu bei, dass ein Gedanke schneller in das Langzeitgedächtnis gelangt und man sich besser an etwas erinnern kann.";
 }
 function sidebaropenChips() {
   document.getElementById("sidebar").classList.toggle("collapsed");
-  document.getElementById("sidetext").innerHTML = "Es gibt 40 NFC-Chips, die einen Bildschirm besitzen und über das Smartphone des Nutzenden mit einem individuellen Bild bespielt werden können. Diese Bilder können entweder eigene Fotos sein oder aus von uns bereitgestellten Bildern ausgewählt werden.Nach der Auswahl eines Bildes wird dieses über eine drahtlose Verbindung auf den NFC-Chip übertragen und in der Datenbank der ID des NFC-Chips das entsprechende Bild zugewiesen. Die NFC-Chips werden magnetisch an allen Türrahmen in der Wohnung angebracht. ";
+  document.getElementById("sidetext").innerHTML =
+    "Es gibt 40 NFC-Chips, die einen Bildschirm besitzen und über das Smartphone des Nutzenden mit einem individuellen Bild bespielt werden können. Diese Bilder können entweder eigene Fotos sein oder aus von uns bereitgestellten Bildern ausgewählt werden.Nach der Auswahl eines Bildes wird dieses über eine drahtlose Verbindung auf den NFC-Chip übertragen und in der Datenbank der ID des NFC-Chips das entsprechende Bild zugewiesen. Die NFC-Chips werden magnetisch an allen Türrahmen in der Wohnung angebracht. ";
 }
 function sidebaropenTuerrahmen() {
   document.getElementById("sidebar").classList.toggle("collapsed");
-  document.getElementById("sidetext").innerHTML = "Nach einer Studie der University of Notre Dame sind wir besonders vergesslich, wenn wir kurz vorher durch eine Tür gelaufen sind.  Man kann sich so lange an Dinge erinnern, bis ein neues Ereignis eintritt und somit das alte in den Hintergrund rückt. ";
+  document.getElementById("sidetext").innerHTML =
+    "Nach einer Studie der University of Notre Dame sind wir besonders vergesslich, wenn wir kurz vorher durch eine Tür gelaufen sind.  Man kann sich so lange an Dinge erinnern, bis ein neues Ereignis eintritt und somit das alte in den Hintergrund rückt. ";
 }
 function endseite() {
   document.getElementById("door").style.display = "none";
@@ -302,4 +307,7 @@ function endseite() {
   document.getElementById("Tuerrahmen").style.display = "none";
   document.getElementById("endseite-btn").style.display = "none";
   document.getElementById("endseite").style.display = "block";
+}
+function reload() {
+  location.reload();
 }

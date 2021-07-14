@@ -338,12 +338,11 @@ input {
 #sidebar.collapsed {
   width: 0;
 }
-#sidetext{
+#sidetext {
   margin: 3%;
   font-size: 1.7vw;
   font-family: "Poppins", sans-serif;
   text-align: left;
-  
 }
 #closer {
   width: 20px;
@@ -403,7 +402,21 @@ input {
 .btn:hover {
   background: lightseagreen;
 }
-.big{
+.big {
   font-size: 3vw;
   top: 3%;
+}
+#btnreload {
+  position: absolute;
+  top: 90%;
+  left: 45%;
+  background: lightseagreen;
+  padding: 7px;
+  border: 2px solid lightseagreen;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+#btnreload:hover {
+  background: transparent;
+  border: 2px solid lightseagreen;
 }
