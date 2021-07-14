@@ -286,12 +286,12 @@ function sidebaropenScanner() {
 function sidebaropenBoden() {
   document.getElementById("sidebar").classList.toggle("collapsed");
   document.getElementById("sidetext").innerHTML =
-    "Die zuvor ausgewählten Bilder werden auf den Fußbode im Türrahmen projeziert. Die gewählten Bilder soll der Nutzer dazu verwenden, sich eine Geschichte mit seinen eigenen Erinnerungen zu überlegen. Die Verknüpfung mit einer Geschichte und den damit verbundenen Emotionen trägt dazu bei, dass ein Gedanke schneller in das Langzeitgedächtnis gelangt und man sich besser an etwas erinnern kann.";
+    "Die zuvor ausgewählten Bilder werden auf den Fußboden im Türrahmen projiziert. Die gewählten Bilder soll der Nutzer dazu verwenden, sich eine Geschichte mit seinen eigenen Erinnerungen zu überlegen. Die Verknüpfung mit einer Geschichte und den damit verbundenen Emotionen trägt dazu bei, dass ein Gedanke schneller in das Langzeitgedächtnis gelangt und man sich besser an etwas erinnern kann.";
 }
 function sidebaropenChips() {
   document.getElementById("sidebar").classList.toggle("collapsed");
   document.getElementById("sidetext").innerHTML =
-    "Es gibt 40 NFC-Chips, die einen Bildschirm besitzen und über das Smartphone des Nutzenden mit einem individuellen Bild bespielt werden können. Diese Bilder können entweder eigene Fotos sein oder aus von uns bereitgestellten Bildern ausgewählt werden.Nach der Auswahl eines Bildes wird dieses über eine drahtlose Verbindung auf den NFC-Chip übertragen und in der Datenbank der ID des NFC-Chips das entsprechende Bild zugewiesen. Die NFC-Chips werden magnetisch an allen Türrahmen in der Wohnung angebracht. ";
+    "Es gibt 40 NFC-Chips, die einen Bildschirm besitzen und über das Smartphone des Nutzenden mit einem individuellen Bild bespielt werden können. Diese Bilder können entweder eigene Fotos sein oder aus von uns bereitgestellten Bildern ausgewählt werden. Nach der Auswahl eines Bildes wird dieses über eine drahtlose Verbindung auf den NFC-Chip übertragen und in der Datenbank der ID des NFC-Chips das entsprechende Bild zugewiesen. Die NFC-Chips werden magnetisch an allen Türrahmen in der Wohnung angebracht. ";
 }
 function sidebaropenTuerrahmen() {
   document.getElementById("sidebar").classList.toggle("collapsed");
