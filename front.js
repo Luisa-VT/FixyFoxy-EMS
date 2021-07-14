@@ -2,7 +2,9 @@ function mit() {
     document.getElementById("vidMit").style.display = "block";
     document.getElementById("mitButton").style.display ="none";
     document.getElementById("ohneButton").style.display ="none";
+    document.getElementById("text").style.display ="none";
     document.getElementById("img").replaceWith(document.getElementById("vidMit"));
+    document.getElementById("vidMit").play();
 
     document.getElementById("vidMit").onended = function nextMit(){
         document.getElementById("vidMit").style.display = "none";
@@ -14,7 +16,9 @@ function mit() {
     document.getElementById("vidOhne").style.display = "block";
     document.getElementById("mitButton").style.display ="none";
     document.getElementById("ohneButton").style.display ="none";
+    document.getElementById("text").style.display ="none";
     document.getElementById("img").replaceWith(document.getElementById("vidOhne"));
+    document.getElementById("vidOhne").play();
 
     document.getElementById("vidOhne").onended = function nextMit(){
         document.getElementById("vidOhne").style.display = "none";

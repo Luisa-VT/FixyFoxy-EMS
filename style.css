@@ -20,8 +20,8 @@ body{
   /* Bottom left text */
   .bottom-left {
     position: absolute;
-    bottom: 60%;
-    left: 30%;
+    bottom: 60.5%;
+    left: 32.5%;
   }
 
   
@@ -55,7 +55,7 @@ body{
      position: absolute;
     top: 5%;
     bottom: 1%;
-    left: 65%;
+    left: 67%;
     right: 10%;
     border-radius: 10px;
     
@@ -98,3 +98,33 @@ body{
         transform: rotate(225deg) translate(10px,10px);
     }
 }
+/*
+hexagon: https://stackoverflow.com/questions/17896791/hexagon-shape-with-css3/17896816
+*/
+.hexagon{
+    color: white;
+    font-size: 4vw;
+    transform: translate(-50%, -50%);
+    animation: hexascale 2s infinite ease-in-out;
+}
+@keyframes hexascale {
+    0% {
+        color: rgba(255, 255, 255, 0.125);
+        font-size: 4vw;
+    }
+    40% {
+        color: white;
+    }
+    100% {
+        font-size: 5vw;
+        color: transparent;
+    }
+  }
+
+  .tv-bg{
+      bottom: 10%;
+      top: 10%;
+      left: 10%;
+      right: 10%;
+      color: black;
+  }

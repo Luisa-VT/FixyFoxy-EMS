@@ -11,7 +11,7 @@
   
       <div class="container">
         <video
- muted class="video" id="vidMit" controls>
+         muted class="video" id="vidMit" controls>
           <source src="img/Mit.MOV" >
         Your browser does not support the video tag.
         </video>
@@ -21,8 +21,8 @@
         </video>
         <img id="Fernseher1" class="standbild" src="img/Fernseher1.jpeg" alt="">
           <img id="img"class="images" src="img/Door.jpeg" alt="Image of Door">
-          <div class="bottom-left">
-            <button id="mitButton" onclick="mit()"></button>
+          <div id="mitButton" class="bottom-left pulsating-circle" onclick="mit()">
+            <span class="hexagon">&#11041;</span>
           </div>
           <div class="arrow bttom-right" id="ohneButton" onclick="ohne()">
             <span></span>
@@ -30,9 +30,12 @@
             <span></span>
 
           </div>    
-          <div class="anfangsText"> <p> Herzlich Willkommen auf unserer EMS Seite. schön, dass seid da. Merkt euch folgendes mal kurz! AUto nla Fisxhstäbchen 
-            Übel
+          <div class="anfangsText"> <p id="text"> Hallo! Schön, dass du da bist. Kannst du dir folgendes kurz merken: Eisberg, Regenschirm, Kamm.
           </p>
+          </div>
+
+          <div class="tv-bg">
+            <p>Cool, dass du da bist!</p>
           </div>
       </div>
   </body>
