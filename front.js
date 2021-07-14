@@ -1,4 +1,5 @@
 let auswahlliste = [];
+
 function mit() {
   document.getElementById("vidMit").style.display = "block";
   document.getElementById("mitButton").style.display = "none";
@@ -167,20 +168,43 @@ function weiter() {
     document.getElementById("backOhne").onended = function Ohne() {
       document.getElementById("backOhne").style.display = "none";
       document.getElementById("Fernseher").style.display = "block";
-      document.getElementById("tv").style.display = "block";
+      document.getElementById("tv2").style.display = "block";
       document
         .getElementById("backOhne")
         .replaceWith(document.getElementById("Fernseher"));
     };
   }
 }
-
+let ergebnis ="";
 function wortfertig() {
   console.log(auswahlliste);
   if (
     document.getElementById("fword").value == "Pinguin" ||
     document.getElementById("fword").value == "pinguin"
   ) {
+    ergebnis = "richtig";
     console.log("richtig");
   }
+  else{
+    ergebnis = "falsch";
+  }
+  document.getElementById("tv2").style.display = "none";
+  document.getElementById("Fernseher").style.display = "none";
+
+  document.getElementById("trailer").style.display ="block";
+  document.getElementById("tv2").replaceWith(document.getElementById("trailer"));
+  document.getElementById("trailer").play();
+
+  document.getElementById("trailer").onended = function trailer(){ 
+    document.getElementById("trailer").style.display ="none";
+    document.getElementById("door").style.display = "block";
+    document.getElementById("Scanner").style.display = "block";
+    document.getElementById("Beamer").style.display = "block";
+    document.getElementById("Boden").style.display = "block";
+    document.getElementById("Chips").style.display = "block";
+    document.getElementById("Tuerrahmen").style.display = "block";
+    document.getElementById("trailer").replaceWith(document.getElementById("door"));
+
+  }
+
 }

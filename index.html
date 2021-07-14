@@ -9,6 +9,10 @@
   </head>
   <body>
     <div class="container">
+      <video muted class="video" id="trailer" controls>
+        <source src="img/Mit.mp4" />
+        Your browser does not support the video tag.
+      </video>     
       <video muted class="video" id="vidMit" controls>
         <source src="img/Mit.mp4" />
         Your browser does not support the video tag.
@@ -45,6 +49,7 @@
         alt=""
       />
       <img id="img" class="images" src="img/Door.jpeg" alt="Image of Door" />
+      <img id="door" class="imageToken" src="img/Door.jpeg" alt="Image of Door" />
       <img id="imgTokens" class="imageToken" src="img/tokens.png" />
       <div id="mitButton" class="bottom-left" onclick="mit()">
         <span class="hexagon">&#11041;</span>
@@ -82,6 +87,17 @@
       <div onclick="auswahl3()">
         <p id="auswahlT3" class="auswahl3">&#11041;</p>
       </div>
+
+
+      <div class="Scanner" id="Scanner"></div>
+    </div>
+    <div class="Chips" id="Chips"></div>
+    </div>
+    <div class="Beamer" id="Beamer"></div>
+    </div>
+    <div class="Tuerrahmen" id="Tuerrahmen"></div>
+    </div>
+    <div class="Boden" id="Boden"></div>
     </div>
   </body>
 </html>
