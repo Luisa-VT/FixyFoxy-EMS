@@ -204,25 +204,57 @@ function weiter() {
   }
 }
 let ergebnis = "";
+let ergebnis2 = "";
 function wortfertig() {
   console.log(auswahlliste);
   if (
-    document.getElementById("fword").value == "Pinguin" ||
-    document.getElementById("fword").value == "pinguin"
+    document.getElementById("fword").value == "Eisbergsalat" ||
+    document.getElementById("fword").value == "eisbergsalat" ||
+    document.getElementById("fword").value == "Pazifischer Ozean" ||
+    document.getElementById("fword").value == "pazifischer Ozean" ||
+    document.getElementById("fword").value == "pazifischer ozean"
   ) {
     ergebnis = "richtig";
     console.log("richtig");
   } else {
     ergebnis = "falsch";
   }
-  document.getElementById("tv2").style.display = "none";
-  document.getElementById("Fernseher").style.display = "none";
+  if (
+    document.getElementById("sword").value == "Eisbergsalat" ||
+    document.getElementById("sword").value == "eisbergsalat" ||
+    document.getElementById("sword").value == "Pazifischer Ozean" ||
+    document.getElementById("sword").value == "pazifischer Ozean" ||
+    document.getElementById("sword").value == "pazifischer ozean"
+  ) {
+    ergebnis2 = "richtig";
+    console.log("richtig");
+  } else {
+    ergebnis2 = "falsch";
+  }
 
-  document.getElementById("trailer").style.display = "block";
-  document
-    .getElementById("tv2")
-    .replaceWith(document.getElementById("trailer"));
-  document.getElementById("trailer").play();
+  if (ergebnis == "richtig" && ergebnis2 == "richtig") {
+    document.getElementById("fword").style.background = "green";
+    document.getElementById("sword").style.background = "green";
+  } else if (ergebnis == "falsch" && ergebnis2 == "richtig") {
+    document.getElementById("sword").style.background = "green";
+    document.getElementById("fword").style.background = "red";
+  } else if (ergebnis == "richtig" && ergebnis2 == "falsch") {
+    document.getElementById("fword").style.background = "green";
+    document.getElementById("sword").style.background = "red";
+  } else if (ergebnis == "falsch" && ergebnis2 == "falsch") {
+    document.getElementById("sword").style.background = "red";
+    document.getElementById("fword").style.background = "red";
+  }
+
+  setTimeout(function () {
+    document.getElementById("tv2").style.display = "none";
+    document.getElementById("Fernseher").style.display = "none";
+    document.getElementById("trailer").style.display = "block";
+    document
+      .getElementById("tv2")
+      .replaceWith(document.getElementById("trailer"));
+    document.getElementById("trailer").play();
+  }, 3000);
 
   document.getElementById("trailer").onended = function trailer() {
     document.getElementById("trailer").style.display = "none";

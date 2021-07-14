@@ -10,7 +10,7 @@
   <body>
     <div class="container">
       <video muted class="video" id="trailer" controls>
-        <source src="img/Mit.mp4" />
+        <source src="/img/Trailer.mp4" />
         Your browser does not support the video tag.
       </video>     
       <video muted class="video" id="vidMit" controls>
@@ -66,19 +66,32 @@
         </p>
       </div>
 
-      <div id="tv" class="tv-bg" onclick="weiter()">
+      <div id="tv" class="tv-bg">
         <p>Wir sind 4 IMD-Studierende aus dem 4. Semester.
           <br>
           In diesem Semester haben wir uns damit beschäftigt, ob Dinge zum Denken benötigt werden.
         </p>
+        <div id="avatare" class="flexbox">
+          <img src="img/vroni.png">    
+          <img src="img/julia.png">
+          <img src="img/luisa.png">
+          <img src="img/tom.png">
+        </div>
+        <div id="namen" class="flexbox">
+          <p>Veronika Haidarow</p>
+          <p>Julia Eßinger</p>
+          <p>Luisa von Trümbach</p>
+          <p>Tom Leissler</p>
+        </div>
+        <button id="weiterbtn" class="btn" onclick="weiter()">Weiter</button>
       </div>
-      <div id="tv2" class="tv-bg">
+      <div id="tv2" class="tv-bg2">
         <p>Was solltest du dir merken?</p>
-        <label for="fword">First word:</label>
+        <label for="fword">1. Wort:</label>
         <input type="text" id="fword" name="fword" value="" /><br /><br />
-        <label for="sword">Second name:</label>
+        <label for="sword">2. Wort:</label>
         <input type="text" id="sword" name="sword" value="" /><br /><br />
-        <button id="fertisch" onclick="wortfertig()">Fertisch</button>
+        <button id="fertisch" onclick="wortfertig()">Fertig</button>
       </div>
 
       <div onclick="auswahl1()">

@@ -136,6 +136,49 @@ hexagon: https://stackoverflow.com/questions/17896791/hexagon-shape-with-css3/17
   position: absolute;
   display: none;
 }
+.tv-bg2 {
+  bottom: 15%;
+  top: 18%;
+  left: 12%;
+  right: 18%;
+  width: 70%;
+  color: lemonchiffon;
+  background: transparent;
+  font-size: 2.5vw;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  position: absolute;
+  display: none;
+}
+#fertisch {
+  font-family: "Poppins", sans-serif;
+  background: lemonchiffon;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+#fertisch:hover {
+  background: lightseagreen;
+}
+input {
+  border: none;
+}
+.flexbox {
+  display: flex;
+}
+#avatare img {
+  width: 30%;
+  user-select: none;
+}
+#namen {
+  margin-top: -4%;
+}
+#namen p {
+  color: lemonchiffon;
+  font-size: 2.3vw;
+  width: 25%;
+}
 
 .imageToken {
   width: 100%;
@@ -182,13 +225,6 @@ hexagon: https://stackoverflow.com/questions/17896791/hexagon-shape-with-css3/17
 }
 #auswahlT3:hover {
   color: lemonchiffon;
-}
-
-#fertisch {
-  background: lemonchiffon;
-  padding: 10px;
-  border: none;
-  cursor: pointer;
 }
 
 .weiterBtn {
@@ -319,6 +355,7 @@ hexagon: https://stackoverflow.com/questions/17896791/hexagon-shape-with-css3/17
   display: none;
   background: lemonchiffon;
   padding: 10px;
+  font-family: "Poppins", sans-serif;
   border: none;
   cursor: pointer;
 }
@@ -342,4 +379,17 @@ hexagon: https://stackoverflow.com/questions/17896791/hexagon-shape-with-css3/17
   position: absolute;
   left: 20%;
   border-radius: 10px;
+}
+.btn {
+  position: absolute;
+  top: 94%;
+  left: 45%;
+  background: lemonchiffon;
+  padding: 7px;
+  border: none;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+.btn:hover {
+  background: lightseagreen;
 }
