@@ -39,14 +39,44 @@ function ohne() {
   };
 }
 
+function hover() {
+  if (document.getElementById("auswahlT1").style.color != "lightseagreen") {
+    document.getElementById("auswahlT1").style.color = "lemonchiffon";
+  }
+}
+function hoverend() {
+  if (document.getElementById("auswahlT1").style.color == "lemonchiffon") {
+    document.getElementById("auswahlT1").style.color = "transparent";
+  }
+}
+function hover2() {
+  if (document.getElementById("auswahlT2").style.color != "lightseagreen") {
+    document.getElementById("auswahlT2").style.color = "lemonchiffon";
+  }
+}
+function hoverend2() {
+  if (document.getElementById("auswahlT2").style.color == "lemonchiffon") {
+    document.getElementById("auswahlT2").style.color = "transparent";
+  }
+}
+function hover3() {
+  if (document.getElementById("auswahlT3").style.color != "lightseagreen") {
+    document.getElementById("auswahlT3").style.color = "lemonchiffon";
+  }
+}
+function hoverend3() {
+  if (document.getElementById("auswahlT3").style.color == "lemonchiffon") {
+    document.getElementById("auswahlT3").style.color = "transparent";
+  }
+}
+
 function auswahl1() {
   if (auswahlliste.includes("Sushi")) {
-    document.getElementById("auswahlT1").style.color = "teal";
+    document.getElementById("auswahlT1").style.color = "transparent";
     auswahlliste.shift("Sushi");
   } else {
-    document.getElementById("auswahlT1").style.color = "blue";
+    document.getElementById("auswahlT1").style.color = "lightseagreen";
     auswahlliste.push("Sushi");
-    document.getElementById("tv").innerHTML = "Sushi";
     if (auswahlliste.length >= 2) {
       weiterMit();
     }
@@ -54,12 +84,11 @@ function auswahl1() {
 }
 function auswahl2() {
   if (auswahlliste.includes("Urlaub")) {
-    document.getElementById("auswahlT2").style.color = "teal";
+    document.getElementById("auswahlT2").style.color = "transparent";
     auswahlliste.shift("Urlaub");
   } else {
-    document.getElementById("auswahlT2").style.color = "green";
+    document.getElementById("auswahlT2").style.color = "lightseagreen";
     auswahlliste.push("Urlaub");
-    document.getElementById("tv").innerHTML = "Urlaub";
     if (auswahlliste.length >= 2) {
       weiterMit();
     }
@@ -68,11 +97,10 @@ function auswahl2() {
 
 function auswahl3() {
   if (auswahlliste.includes("Pinguin")) {
-    document.getElementById("auswahlT3").style.color = "teal";
+    document.getElementById("auswahlT3").style.color = "transparent";
     auswahlliste.shift("Pinguin");
   } else {
-    document.getElementById("auswahlT3").style.color = "white";
-    document.getElementById("tv").innerHTML = "Pinguin";
+    document.getElementById("auswahlT3").style.color = "lightseagreen";
     auswahlliste.push("Pinguin");
     if (auswahlliste.length >= 2) {
       weiterMit();
@@ -175,7 +203,7 @@ function weiter() {
     };
   }
 }
-let ergebnis ="";
+let ergebnis = "";
 function wortfertig() {
   console.log(auswahlliste);
   if (
@@ -184,27 +212,43 @@ function wortfertig() {
   ) {
     ergebnis = "richtig";
     console.log("richtig");
-  }
-  else{
+  } else {
     ergebnis = "falsch";
   }
   document.getElementById("tv2").style.display = "none";
   document.getElementById("Fernseher").style.display = "none";
 
-  document.getElementById("trailer").style.display ="block";
-  document.getElementById("tv2").replaceWith(document.getElementById("trailer"));
+  document.getElementById("trailer").style.display = "block";
+  document
+    .getElementById("tv2")
+    .replaceWith(document.getElementById("trailer"));
   document.getElementById("trailer").play();
 
-  document.getElementById("trailer").onended = function trailer(){ 
-    document.getElementById("trailer").style.display ="none";
+  document.getElementById("trailer").onended = function trailer() {
+    document.getElementById("trailer").style.display = "none";
     document.getElementById("door").style.display = "block";
     document.getElementById("Scanner").style.display = "block";
     document.getElementById("Beamer").style.display = "block";
     document.getElementById("Boden").style.display = "block";
     document.getElementById("Chips").style.display = "block";
     document.getElementById("Tuerrahmen").style.display = "block";
-    document.getElementById("trailer").replaceWith(document.getElementById("door"));
+    document.getElementById("endseite-btn").style.display = "block";
+    document
+      .getElementById("trailer")
+      .replaceWith(document.getElementById("door"));
+  };
+}
 
-  }
-
+function sidebaropen() {
+  document.getElementById("sidebar").classList.toggle("collapsed");
+}
+function endseite() {
+  document.getElementById("door").style.display = "none";
+  document.getElementById("Scanner").style.display = "none";
+  document.getElementById("Beamer").style.display = "none";
+  document.getElementById("Boden").style.display = "none";
+  document.getElementById("Chips").style.display = "none";
+  document.getElementById("Tuerrahmen").style.display = "none";
+  document.getElementById("endseite-btn").style.display = "none";
+  document.getElementById("endseite").style.display = "block";
 }

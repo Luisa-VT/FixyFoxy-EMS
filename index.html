@@ -41,11 +41,11 @@
         <source src="img/backOhne.MOV" />
         Your browser does not support the video tag.
       </video>
-      <img id="Fernseher" class="standbild" src="img/Fernseher.jpeg" alt="" />
+      <img id="Fernseher" class="standbild" src="img/Fernseher.jpg" alt="" />
       <img
         id="FernseherSchlafzimmer"
         class="standbild"
-        src="img/Fernseher1.jpeg"
+        src="img/Fernseher1.jpg"
         alt=""
       />
       <img id="img" class="images" src="img/Door.jpeg" alt="Image of Door" />
@@ -61,13 +61,16 @@
       </div>
       <div class="anfangsText">
         <p id="text">
-          Hallo! Schön, dass du da bist. Kannst du dir folgendes kurz merken:
-          Eisberg, Regenschirm, Kamm.
+          Hallo! Schön, dass du da bist. Kannst du dir bitte folgendes kurz merken:
+          Eisbergsalat und Pazifischer Ozean.
         </p>
       </div>
 
       <div id="tv" class="tv-bg" onclick="weiter()">
-        <p>Cool, dass du da bist!</p>
+        <p>Wir sind 4 IMD-Studierende aus dem 4. Semester.
+          <br>
+          In diesem Semester haben wir uns damit beschäftigt, ob Dinge zum Denken benötigt werden.
+        </p>
       </div>
       <div id="tv2" class="tv-bg">
         <p>Was solltest du dir merken?</p>
@@ -75,29 +78,32 @@
         <input type="text" id="fword" name="fword" value="" /><br /><br />
         <label for="sword">Second name:</label>
         <input type="text" id="sword" name="sword" value="" /><br /><br />
-        <button onclick="wortfertig()">Fertisch</button>
+        <button id="fertisch" onclick="wortfertig()">Fertisch</button>
       </div>
 
       <div onclick="auswahl1()">
-        <p id="auswahlT1" class="auswahl1">&#11041;</p>
+        <p id="auswahlT1" class="auswahl1" onmouseover="hover()" onmouseout="hoverend()">&#11041;</p>
       </div>
       <div onclick="auswahl2()">
-        <p id="auswahlT2" class="auswahl2">&#11041;</p>
+        <p id="auswahlT2" class="auswahl2" onmouseover="hover2()" onmouseout="hoverend2()">&#11041;</p>
       </div>
       <div onclick="auswahl3()">
-        <p id="auswahlT3" class="auswahl3">&#11041;</p>
+        <p id="auswahlT3" class="auswahl3" onmouseover="hover3()" onmouseout="hoverend3()">&#11041;</p>
       </div>
 
 
-      <div class="Scanner" id="Scanner"></div>
-    </div>
-    <div class="Chips" id="Chips"></div>
-    </div>
-    <div class="Beamer" id="Beamer"></div>
-    </div>
-    <div class="Tuerrahmen" id="Tuerrahmen"></div>
-    </div>
-    <div class="Boden" id="Boden"></div>
-    </div>
+    <div class="Scanner" id="Scanner" onclick="sidebaropen()"></div>
+    <div class="Chips" id="Chips" onclick="sidebaropen()"></div>
+    <div class="Beamer" id="Beamer" onclick="sidebaropen()"></div>
+    <div class="Tuerrahmen" id="Tuerrahmen" onclick="sidebaropen()"></div>
+    <div class="Boden" id="Boden" onclick="sidebaropen()"></div>
+ 
+    <div id="sidebar" class="collapsed">
+      <button id="closer" title="Close sidebar" onclick="sidebaropen()">x</button>
+  </div>
+  <button id="endseite-btn" onclick="endseite()">Ausblick</button>
+  <div id="endseite">
+   <p class="text-endseite">Halli hallo hier kommt ein langer bums Text hin.</p> 
+  </div>
   </body>
 </html>
