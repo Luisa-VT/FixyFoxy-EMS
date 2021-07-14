@@ -12,7 +12,7 @@
       <div class="container">
         <video
          muted class="video" id="vidMit" controls>
-          <source src="img/Mit.MOV" >
+          <source src="img/Mit.mp4" >
         Your browser does not support the video tag.
         </video>
         <video muted class="video" id="vidOhne" controls>
@@ -21,7 +21,8 @@
         </video>
         <img id="Fernseher1" class="standbild" src="img/Fernseher1.jpeg" alt="">
           <img id="img"class="images" src="img/Door.jpeg" alt="Image of Door">
-          <div id="mitButton" class="bottom-left pulsating-circle" onclick="mit()">
+          <img id="imgTokens"class="imageToken" src="img/Tokens.jpg">
+          <div id="mitButton" class="bottom-left" onclick="mit()">
             <span class="hexagon">&#11041;</span>
           </div>
           <div class="arrow bttom-right" id="ohneButton" onclick="ohne()">
@@ -34,8 +35,21 @@
           </p>
           </div>
 
-          <div class="tv-bg">
+          <div id="tv" class="tv-bg">
             <p>Cool, dass du da bist!</p>
+          </div>
+
+          <div onclick="auswahl1()">
+            <p id="auswahlT1"class="auswahl1">&#11041;
+            </p>
+          </div>
+          <div onclick="auswahl2()">
+            <p id="auswahlT2" class="auswahl2">&#11041;
+            </p>
+          </div>
+          <div onclick="auswahl3()">
+            <p id="auswahlT3" class="auswahl3">&#11041;
+            </p>
           </div>
       </div>
   </body>

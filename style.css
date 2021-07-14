@@ -126,5 +126,56 @@ hexagon: https://stackoverflow.com/questions/17896791/hexagon-shape-with-css3/17
       top: 10%;
       left: 10%;
       right: 10%;
-      color: black;
+      color: white;
+     background: black;
+     font-size: 2.5vw;
+     font-family: 'Poppins', sans-serif;
+     font-weight: 400;
+     text-align: center;
+     position: absolute;
+     display: none;
+  }
+
+  .imageToken{
+    width: 100%;
+    height: auto;
+    overflow: hidden; 
+    display: none;
+  }
+
+  .auswahl1{
+      left: 36%;
+      top: 8%;
+      transform: rotate(30deg);
+      position: absolute;
+    color: transparent;
+    font-size: 14vw; 
+    display: none;
+  }
+  .auswahl1:hover{
+    color: beige;
+  }
+  .auswahl2{
+    left: 49%;
+    top: 10%;
+    transform: rotate(30deg);
+    position: absolute;
+  color: transparent;
+  font-size: 14.5vw; 
+  display: none;
+}
+.auswahl2:hover{
+    color: beige;
+  }
+.auswahl3{
+    left: 43%;
+    top: 11%;
+    transform: rotate(30deg) translate(-50%,-50%);
+    position: absolute;
+  color:transparent;
+  font-size: 14.5vw; 
+  display: none;
+}
+.auswahl3:hover{
+    color: beige;
   }
