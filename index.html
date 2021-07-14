@@ -1,73 +1,79 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Erlebbares Management Summary Team 3</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="front.js"></script>
   </head>
   <body>
-  
-      <div class="container">
-        <video
-         muted class="video" id="vidMit" controls>
-          <source src="img/Mit.mp4" >
+    <div class="container">
+      <video muted class="video" id="vidMit" controls>
+        <source src="img/Mit.mp4" />
         Your browser does not support the video tag.
-        </video>
-        <video muted class="video" id="vidOhne" controls>
-          <source src="img/Ohne.MOV" >
+      </video>
+      <video muted class="video" id="vidOhne" controls>
+        <source src="img/Ohne.MOV" />
         Your browser does not support the video tag.
-        </video>
-        <video muted class="video" id="weiterMit" controls>
-          <source src="img/weiterMit.MOV" >
+      </video>
+      <video muted class="video" id="weiterMit" controls>
+        <source src="img/weiterMit.MOV" />
         Your browser does not support the video tag.
-        </video>
-        <video muted class="video" id="backMit" controls>
-          <source src="img/backMit.MOV" >
+      </video>
+      <video muted class="video" id="backMit" controls>
+        <source src="img/backMit.MOV" />
         Your browser does not support the video tag.
-        </video>
-        <video muted class="video" id="backOhne" controls>
-          <source src="img/backOhne.MOV" >
+      </video>
+      <video muted class="video" id="backOhne" controls>
+        <source src="img/backOhne.MOV" />
         Your browser does not support the video tag.
-        </video>
-        <img id="Fernseher" class="standbild" src="img/Fernseher.jpeg" alt="">
-        <img id="FernseherSchlafzimmer" class="standbild" src="img/Fernseher.jpeg" alt="">
-          <img id="img"class="images" src="img/Door.jpeg" alt="Image of Door">
-          <img id="imgTokens"class="imageToken" src="img/Tokens.jpg">
-          <div id="mitButton" class="bottom-left" onclick="mit()">
-            <span class="hexagon">&#11041;</span>
-          </div>
-          <div class="arrow bttom-right" id="ohneButton" onclick="ohne()">
-            <span></span>
-            <span></span>
-            <span></span>
-
-          </div>    
-          <div class="anfangsText"> <p id="text"> Hallo! Schön, dass du da bist. Kannst du dir folgendes kurz merken: Eisberg, Regenschirm, Kamm.
-          </p>
-          </div>
-
-          <div id="tv" class="tv-bg" onclick="weiter()">
-            <p>Cool, dass du da bist!</p>
-          </div>
-          <div id="tv2" class="tv-bg" >
-            <p>Cool, dass du da bist!</p>
-          </div>
-          
-
-          <div onclick="auswahl1()">
-            <p id="auswahlT1"class="auswahl1">&#11041;
-            </p>
-          </div>
-          <div onclick="auswahl2()">
-            <p id="auswahlT2" class="auswahl2">&#11041;
-            </p>
-          </div>
-          <div onclick="auswahl3()">
-            <p id="auswahlT3" class="auswahl3">&#11041;
-            </p>
-          </div>
+      </video>
+      <img id="Fernseher" class="standbild" src="img/Fernseher.jpeg" alt="" />
+      <img
+        id="FernseherSchlafzimmer"
+        class="standbild"
+        src="img/Fernseher1.jpeg"
+        alt=""
+      />
+      <img id="img" class="images" src="img/Door.jpeg" alt="Image of Door" />
+      <img id="imgTokens" class="imageToken" src="img/Tokens.jpg" />
+      <div id="mitButton" class="bottom-left" onclick="mit()">
+        <span class="hexagon">&#11041;</span>
       </div>
+      <div class="arrow bttom-right" id="ohneButton" onclick="ohne()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="anfangsText">
+        <p id="text">
+          Hallo! Schön, dass du da bist. Kannst du dir folgendes kurz merken:
+          Eisberg, Regenschirm, Kamm.
+        </p>
+      </div>
+
+      <div id="tv" class="tv-bg" onclick="weiter()">
+        <p>Cool, dass du da bist!</p>
+      </div>
+      <div id="tv2" class="tv-bg">
+        <p>Was solltest du dir merken?</p>
+        <label for="fword">First word:</label>
+        <input type="text" id="fword" name="fword" value="" /><br /><br />
+        <label for="sword">Second name:</label>
+        <input type="text" id="sword" name="sword" value="" /><br /><br />
+        <button onclick="wortfertig()">Fertisch</button>
+      </div>
+
+      <div onclick="auswahl1()">
+        <p id="auswahlT1" class="auswahl1">&#11041;</p>
+      </div>
+      <div onclick="auswahl2()">
+        <p id="auswahlT2" class="auswahl2">&#11041;</p>
+      </div>
+      <div onclick="auswahl3()">
+        <p id="auswahlT3" class="auswahl3">&#11041;</p>
+      </div>
+    </div>
   </body>
 </html>
